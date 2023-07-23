@@ -1,0 +1,182 @@
+
+body, h1, h2, p, a, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f0f0f0;
+  overflow-x: hidden; 
+}
+
+
+body {
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0.9;
+}
+
+
+.nav-bar {
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar img {
+  width: 120px; 
+  height: auto;
+}
+
+.login-box {
+  display: flex;
+  align-items: center;
+}
+
+.login-box a {
+  background-color: #e60000;
+  padding: 8px 20px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.login-box a:hover {
+  background-color: #ff3333;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-items {
+  margin-right: 20px; 
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  transform: scaleX(1);
+}
+
+/* Main Header styles */
+.main-header {
+  background-color: #ffcc00;
+  text-align: center;
+  padding: 50px 0;
+  color: #333;
+}
+
+.main-header h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.main-header p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.main-header .cta-button {
+  display: inline-block;
+  background-color: #e60000;
+  color: #fff;
+  padding: 15px 25px;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background-color 0.2s ease;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.main-header .cta-button:hover {
+  background-color: #ff3333;
+}
+
+
+.courses-offered {
+  margin-top: 20px;  
+  overflow-x: hidden; 
+  max-height: 100vh; 
+    vertical scrolling 
+}
+
+.get-started-button {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.get-started-button .cta-button {
+  font-size: 20px;
+}
+
+.courses-list {
+  display: flex;
+  justify-content: space-between; 
+}
+
+.course {
+  flex: 0 0 calc(24% - 20px); 
+  margin: 5px;
+  padding: 5px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.course h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.course p {
+  font-size: 14px;
+}
+
+.course-photo {
+  margin-bottom: 10px;
+}
+
+.course-photo img {
+  max-width: 200px; 
+}
+
+
+.course2-photo img,
+.course4-photo img {
+  max-width: 800px;
+}
+
+
+.courses-offered {
+  width: 70%; 
+  margin: 0 auto;
+  max-width: 1100px;
+}
